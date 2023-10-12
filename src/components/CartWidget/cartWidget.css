@@ -1,0 +1,15 @@
+.carroCompras{
+    justify-self: end;
+    display: flex;
+    align-items: center;
+}
+
+.carroCompras p {
+    color: white;
+    margin-right: 5px;
+}
+
+.carroCompras img{
+    width: 30px;
+    height: 30px;
+}

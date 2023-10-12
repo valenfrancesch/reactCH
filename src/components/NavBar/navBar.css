@@ -1,0 +1,32 @@
+.navSuperior{
+    background-color: rgb(255, 27, 152);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav{
+    align-self: flex-start;
+}
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    margin-top: 0px;
+}
+
+li{
+    margin-right: 60px;
+}
+
+#titulo-pag{
+    color: white;
+    margin: 0px;
+    margin-bottom: 10px;
+    justify-self: center
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
