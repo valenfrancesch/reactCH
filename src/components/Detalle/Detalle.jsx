@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import  ItemCounter  from "../ItemCounter/ItemCounter"
+
 
 const products = [ 
     {id: 1, name: 'Remera Rosa', category: 'remeras', price: 5000, stock: 200, description: 'Remera de color rosa para mujer talle único', imageUrl: 'https://http2.mlstatic.com/D_NQ_NP_843817-MLA72150367397_102023-O.webp'},
