@@ -11,7 +11,6 @@ function NavBar (){
           <li><Link to='/'>Inicio</Link></li>
           <li><Link to={`/categoria/${'remeras'}`}>Remeras</Link></li>
           <li><Link to={`/categoria/${'accesorios'}`}>Accesorios</Link></li>
-          <li><Link to='/contacto'>Contacto</Link></li>
       </ul>  
         <CartWidget/>
       </div>
