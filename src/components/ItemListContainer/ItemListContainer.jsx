@@ -4,10 +4,15 @@ import './listContainer.css'
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
+const Loading = () => {
+    return <h2>Cargando...</h2>
+}
+
 function ItemListContainer(props) {
     const {cid:categoria} = useParams()
 
     const [products, setProducts ] = useState([])
+    const [ loading, setLoading ]   = useState(true)
 
     useEffect(() =>{
         const dbFireStore = getFirestore()
@@ -17,6 +22,7 @@ function ItemListContainer(props) {
                 id: produc.id, ...produc.data()
             }))))
             .catch(error => console.log(error))
+            .finally(() => setLoading(false))
     }, [])
             
     let productsCategoria = []
@@ -40,11 +46,9 @@ function ItemListContainer(props) {
         </div>
     ));
 
-    return (
-        <div className="products-container">
-            {productsElements}
-        </div>
-    );
+    return(<>
+    { loading ? <Loading /> : <div className="products-container">{productsElements}</div> }
+    </>)
     
 }
 

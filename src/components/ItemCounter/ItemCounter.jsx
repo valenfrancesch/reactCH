@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 
 export const ItemCounter = ({initial=1, stock=10, onAdd}) => {
     const[count, setCount] = useState(initial)
-
+    const[estadoCarrito, setEstadoCarrito] = useState(false)
     const {cartList} = useContext(CartContext)
-    
+
     const handleOnAdd = () => {
         onAdd(count)
+        setEstadoCarrito(true)
     }
 
     const useCounter = (min, max) => {
@@ -33,21 +34,17 @@ export const ItemCounter = ({initial=1, stock=10, onAdd}) => {
 
     const {handleResta, handleSuma} = useCounter(initial, stock)
 
-    return (
-        <div>
+    return ( estadoCarrito ?  <><Link to='/carrito'><button>Ir al carrito</button></Link><Link to='/'><button>Ir al incio</button></Link></> : <div>
             <p>Agregar al Carrito</p>
             <div>
                 <button onClick={handleSuma}>+</button>
                 <button onClick={handleResta}>-</button>
                 <button onClick={handleOnAdd}>Agregar al carrito</button>
-                <br />
-                <Link to='/carrito'><button onClick={handleOnAdd}>Ir al carrito</button></Link>
             </div>
             <div>
                 <p>Cantidad seleccionada: {count} </p>
             </div>
-        </div>
-    )
+        </div> )
 }
 
 // Detalle del carrito

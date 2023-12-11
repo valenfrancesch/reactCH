@@ -7,7 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Detalle from './components/Detalle/Detalle'
 import CartContextProvider from './components/CartContext/CartContext';
 import CarritoCompras from './components/CarritoCompras/CarritoCompras';
-import Orden from './components/CarritoCompras/Orden'
+import Orden from './components/CarritoCompras/orden';
+
 
 function App() {
   return (
