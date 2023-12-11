@@ -3,6 +3,8 @@
 ## ModaFusion
 Este proyecto es una tienda virtual de remeras y accesorios. El usuario puede buscar por categorías, elegir la cantidad de productos, agregarlas al carrito y enviar su orden.
 
+**DEMO:** https://657723e312346a06ad6c751a--capable-centaur-23e75d.netlify.app/
+
 **Dependencias**
 
 Node version 16.13.2
