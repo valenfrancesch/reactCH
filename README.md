@@ -5,6 +5,8 @@ Este proyecto es una tienda virtual de remeras y accesorios. El usuario puede bu
 
 **DEMO:** https://657723e312346a06ad6c751a--capable-centaur-23e75d.netlify.app/
 
+**Deploy en cuenta de gif:** https://drive.google.com/file/d/1HydgjDBWsR4Yh9FxJpsz2inamE77EoVE/view?usp=sharing
+
 **Dependencias**
 
 Node version 16.13.2
